@@ -1,9 +1,10 @@
-name: "cd pipelone"
+name: "cd pipeline"
 
 on:
     workflow_run:
-        workflows: ['Sample React CI PipeLine / Workflow']
-        types: completed
+        workflows: ["Sample React CI PipeLine / Workflow"]
+        types: 
+            - completed
 
 
 jobs:
