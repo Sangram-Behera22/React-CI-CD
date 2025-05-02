@@ -15,3 +15,14 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: "22"
+            - name: "Node Version Check"
+              uses: node --version
+
+            - name: "Clone the Repository"
+              uses: actions/checkout@v2
+
+            - name: "Install Dependencies"
+              uses: npm install
+
+            - name: "list Directories"
+              uses: ls
