@@ -17,7 +17,7 @@ jobs:
                 node-version: "22"
 
             - name: "Node Version Check"
-              uses: node --version
+              run: node --version
 
             - name: "Clone the Repository"
               uses: actions/checkout@v4
